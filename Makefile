@@ -12,7 +12,6 @@ all: publications generate
 generate: 
 	./hugo --minify
 	cp -vr $(CONTENTDIR)/fonts $(OUTPUTDIR)
-	rm -v $(OUTPUTDIR)/publications.bib
 
 publications: clean-publications
 	pipenv run python $(TOOLS)/bib2md.py \
