@@ -1,0 +1,12 @@
+        {{ partial "head" . }}
+        <hr>
+        <div id="content">
+            <div class="container">
+
+            {{ block "content" . }}{{ end }}
+
+
+            </div>
+        </div>
+        
+        {{ partial "foot" . }}
